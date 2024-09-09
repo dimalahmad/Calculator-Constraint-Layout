@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+<!--INPUT START-->
+    <TextView
+        android:id="@+id/tvFormula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:textColor="@color/black"
+        android:textSize="23sp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="@id/tvResult"
+        android:layout_marginStart="40dp"
+        app:layout_constraintEnd_toEndOf="@id/ver5"
+        android:fontFamily="@font/poppins_regular"
+        tools:text="formula"/>
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:text="@string/_0"
+        android:textColor="@color/black"
+        android:textSize="38sp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/line"
+        android:layout_marginStart="40dp"
+        app:layout_constraintEnd_toEndOf="@id/ver5"
+        android:textStyle="bold"/>
+<!--    INPUT END-->
+
+<!--    LINE START -->
+    <TextView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="270dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="2sp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@color/pink"
+        android:textStyle="bold"/>
+<!--    LINE END-->
+
+<!--    VERTICAL GUIDE START-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/ver1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/ver2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/ver3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/ver4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.7"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/ver5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/ve1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/ve2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.26"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/ve3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.42"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/ve4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.58"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/ve5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.74"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/ve6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.9"
+        />
+
+<!--    VERTICAL GUIDE END-->
+
+<!--    HORIZONTAL GUIDE START-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/top1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.40"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/hor1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.40"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/hor2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.52"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/hor3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.64"
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/hor4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.76"
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/hor5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.87"
+        />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/hor6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.96"
+        />
+<!--    HORIZONTAL GUIDE END-->
+
+<!--    ROW 1 START-->
+    <TextView
+        android:id="@+id/clear"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/circle_orange"
+        android:text="@string/c"
+        android:textColor="@color/white"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="40sp"
+        app:layout_constraintTop_toBottomOf="@id/hor1"
+        app:layout_constraintStart_toStartOf="@id/ver1"
+        />
+    <TextView
+        android:id="@+id/seven"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/background"
+        android:text="@string/_7"
+        android:textColor="@color/angka"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="40sp"
+        app:layout_constraintTop_toBottomOf="@id/hor2"
+        app:layout_constraintStart_toStartOf="@id/ver1"
+        />
+
+    <TextView
+        android:id="@+id/four"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:textColor="@color/angka"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/background"
+        android:text="@string/_4"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="40sp"
+        app:layout_constraintTop_toBottomOf="@id/hor3"
+        app:layout_constraintStart_toStartOf="@id/ver1"
+        />
+
+    <TextView
+        android:id="@+id/one"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="8dp"
+        android:textColor="@color/angka"
+        android:background="@drawable/background"
+        android:text="@string/_1"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="40sp"
+        app:layout_constraintTop_toBottomOf="@id/hor4"
+        app:layout_constraintStart_toStartOf="@id/ver1"
+        />
+
+    <TextView
+        android:id="@+id/zero"
+        android:layout_width="152dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="8dp"
+        android:textColor="@color/angka"
+        android:background="@drawable/background"
+        android:text="@string/_0"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="40sp"
+        app:layout_constraintTop_toBottomOf="@id/hor5"
+        app:layout_constraintStart_toEndOf="@id/ver1"
+        />
+<!--ROW 1 END-->
+
+<!--    ROW 2 START-->
+    <TextView
+        android:id="@+id/percent"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/background"
+        android:text="@string/percent"
+        android:textColor="@color/orange"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="40sp"
+        app:layout_constraintTop_toBottomOf="@id/hor1"
+        app:layout_constraintStart_toStartOf="@id/ver2"
+        />
+    <TextView
+        android:id="@+id/eight"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/background"
+        android:text="@string/_8"
+        android:textColor="@color/angka"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="40sp"
+        app:layout_constraintTop_toBottomOf="@id/hor2"
+        app:layout_constraintStart_toStartOf="@id/ver2"
+        />
+
+    <TextView
+        android:id="@+id/five"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/background"
+        android:text="@string/_5"
+        android:textColor="@color/angka"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="40sp"
+        app:layout_constraintTop_toBottomOf="@id/hor3"
+        app:layout_constraintStart_toStartOf="@id/ver2"
+        />
+
+    <TextView
+        android:id="@+id/two"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/background"
+        android:text="@string/_2"
+        android:textColor="@color/angka"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="40sp"
+        app:layout_constraintTop_toBottomOf="@id/hor4"
+        app:layout_constraintStart_toStartOf="@id/ver2"
+        />
+
+
+<!-- ROW 2 END-->
+
+    <!--    ROW 3 START-->
+    <TextView
+        android:id="@+id/divide"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/background"
+        android:text="@string/divide"
+        android:gravity="center"
+        android:textColor="@color/orange"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@id/hor1"
+        app:layout_constraintStart_toStartOf="@id/ver3"
+        />
+    <TextView
+        android:id="@+id/nine"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/background"
+        android:text="@string/_9"
+        android:gravity="center_horizontal"
+        android:textColor="@color/angka"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="40sp"
+        app:layout_constraintTop_toBottomOf="@id/hor2"
+        app:layout_constraintStart_toStartOf="@id/ver3"
+        />
+
+    <TextView
+        android:id="@+id/six"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/background"
+        android:text="@string/_6"
+        android:textColor="@color/angka"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="40sp"
+        app:layout_constraintTop_toBottomOf="@id/hor3"
+        app:layout_constraintStart_toStartOf="@id/ver3"
+        />
+
+    <TextView
+        android:id="@+id/three"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/background"
+        android:text="@string/_3"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="40sp"
+        android:textColor="@color/angka"
+        app:layout_constraintTop_toBottomOf="@id/hor4"
+        app:layout_constraintStart_toStartOf="@id/ver3"
+        />
+
+    <TextView
+        android:id="@+id/dot"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/background"
+        android:text="@string/dot"
+        android:gravity="center_horizontal"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="40sp"
+        android:textColor="@color/orange"
+        app:layout_constraintTop_toBottomOf="@id/hor5"
+        app:layout_constraintStart_toStartOf="@id/ver3"
+        />
+    <!-- ROW 3 END-->
+
+    <!--    ROW 4 START-->
+    <TextView
+        android:id="@+id/multiply"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/background"
+        android:text="@string/multiply"
+        android:gravity="center_horizontal"
+        android:textColor="@color/orange"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="40sp"
+        app:layout_constraintTop_toBottomOf="@id/hor1"
+        app:layout_constraintStart_toStartOf="@id/ver4"
+        />
+
+    <TextView
+        android:id="@+id/plus"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/background"
+        android:text="@string/plus"
+        android:gravity="center_horizontal"
+        android:textColor="@color/orange"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="40sp"
+        app:layout_constraintTop_toBottomOf="@id/hor2"
+        app:layout_constraintStart_toStartOf="@id/ver4"
+        />
+
+    <TextView
+        android:id="@+id/mines"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/background"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center_horizontal"
+        android:text="@string/mines"
+        android:textColor="@color/orange"
+        android:textSize="40sp"
+        app:layout_constraintStart_toStartOf="@id/ver4"
+        app:layout_constraintTop_toBottomOf="@id/hor3" />
+
+    <TextView
+        android:id="@+id/equal"
+        android:layout_width="70dp"
+        android:layout_height="145dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/circle_orange"
+        android:text="@string/equal"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="35sp"
+
+        app:layout_constraintTop_toBottomOf="@id/hor4"
+        app:layout_constraintBottom_toTopOf="@id/hor6"
+        app:layout_constraintStart_toStartOf="@id/ver4"
+        />
+
+    <!-- ROW 4 END-->
+</androidx.constraintlayout.widget.ConstraintLayout>
